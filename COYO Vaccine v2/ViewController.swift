@@ -28,14 +28,15 @@ class ViewController: NSViewController {
             infoLabel.alphaValue = 1
             codeTextField.alphaValue = hasCode ? 1 : 0
             infoLabel.stringValue = hasCode ? "Fill your 'Vermittlungscodes / Meditation code' and press try again, unfortunately I don't remember current flow with code,  just send me screenshot @turushan so I can write here useful information :D if there is no termin, just press try again and repeat" : "To get your 'Vermittlungscodes / Meditation code' click 'Nein' below and wait for 'Gehören Sie einer impfberechtigten Personengruppen an?', then click 'Ja' and enter your age. If that question doesn't appear just press try again, and repeat :)"
-            nextZipLabel.stringValue = "Next zip: 20095"
 
             if !hasCode {
                 let request = URLRequest(url: URL(string: "https://353-iz.impfterminservice.de/impftermine/service?plz=20038")!)
                 webView.load(request)
-                zipIndex += 1
+                zipIndex = 1
+                nextZipLabel.stringValue = "Next zip: 20095"
+            } else {
+                nextZipLabel.stringValue = "Next zip: 20038"
             }
-
         }
     }
 
@@ -48,12 +49,6 @@ class ViewController: NSViewController {
         infoLabel.alphaValue = 0
     }
 
-    override var representedObject: Any? {
-        didSet {
-        // Update the view, if already loaded.
-        }
-    }
-
     @IBAction func yesTapped(_ sender: Any) {
         hasCode = true
     }
@@ -63,21 +58,18 @@ class ViewController: NSViewController {
     }
 
     @IBAction func tryAgainTapped(_ sender: Any) {
-        if hasCode {
-            if zipIndex >= zipCodes.count {
-                zipIndex = 0
-            }
-            let request = URLRequest(url: URL(string: "https://353-iz.impfterminservice.de/impftermine/suche/\(codeTextField.stringValue)/\(zipCodes[zipIndex])")!)
-            webView.load(request)
-
-            zipIndex += 1
-            nextZipLabel.stringValue = "Next zip: \(zipCodes[zipIndex])"
-        } else {
-            let request = URLRequest(url: URL(string: "https://353-iz.impfterminservice.de/impftermine/service?plz=\(zipCodes[zipIndex])")!)
-            webView.load(request)
-            zipIndex += 1
-            nextZipLabel.stringValue = "Next zip: \(zipCodes[zipIndex])"
+        if zipIndex >= zipCodes.count {
+            zipIndex = 0
         }
+        var request: URLRequest
+        if hasCode {
+            request = URLRequest(url: URL(string: "https://353-iz.impfterminservice.de/impftermine/suche/\(codeTextField.stringValue)/\(zipCodes[zipIndex])")!)
+        } else {
+            request = URLRequest(url: URL(string: "https://353-iz.impfterminservice.de/impftermine/service?plz=\(zipCodes[zipIndex])")!)
+        }
+        webView.load(request)
+        zipIndex += 1
+        nextZipLabel.stringValue = "Next zip: \(zipCodes[zipIndex])"
     }
 }
 
