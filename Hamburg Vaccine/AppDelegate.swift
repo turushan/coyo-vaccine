@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  COYO Vaccine v2
+//  Hamburg Vaccine
 //
 //  Created by Turushan Aktay on 02.06.21.
 //

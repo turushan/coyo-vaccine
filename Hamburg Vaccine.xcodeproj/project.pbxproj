@@ -14,13 +14,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		98E8BF7B2667FF7E00097C40 /* COYO Vaccine v2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "COYO Vaccine v2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		98E8BF7B2667FF7E00097C40 /* Hamburg Vaccine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hamburg Vaccine.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		98E8BF7E2667FF7E00097C40 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		98E8BF802667FF7E00097C40 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		98E8BF822667FF7F00097C40 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		98E8BF852667FF7F00097C40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		98E8BF872667FF7F00097C40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		98E8BF882667FF7F00097C40 /* COYO_Vaccine_v2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = COYO_Vaccine_v2.entitlements; sourceTree = "<group>"; };
+		98E8BF882667FF7F00097C40 /* Hamburg_Vaccine.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Hamburg_Vaccine.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,7 +37,7 @@
 		98E8BF722667FF7E00097C40 = {
 			isa = PBXGroup;
 			children = (
-				98E8BF7D2667FF7E00097C40 /* COYO Vaccine v2 */,
+				98E8BF7D2667FF7E00097C40 /* Hamburg Vaccine */,
 				98E8BF7C2667FF7E00097C40 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -45,12 +45,12 @@
 		98E8BF7C2667FF7E00097C40 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				98E8BF7B2667FF7E00097C40 /* COYO Vaccine v2.app */,
+				98E8BF7B2667FF7E00097C40 /* Hamburg Vaccine.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		98E8BF7D2667FF7E00097C40 /* COYO Vaccine v2 */ = {
+		98E8BF7D2667FF7E00097C40 /* Hamburg Vaccine */ = {
 			isa = PBXGroup;
 			children = (
 				98E8BF7E2667FF7E00097C40 /* AppDelegate.swift */,
@@ -58,17 +58,17 @@
 				98E8BF822667FF7F00097C40 /* Assets.xcassets */,
 				98E8BF842667FF7F00097C40 /* Main.storyboard */,
 				98E8BF872667FF7F00097C40 /* Info.plist */,
-				98E8BF882667FF7F00097C40 /* COYO_Vaccine_v2.entitlements */,
+				98E8BF882667FF7F00097C40 /* Hamburg_Vaccine.entitlements */,
 			);
-			path = "COYO Vaccine v2";
+			path = "Hamburg Vaccine";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		98E8BF7A2667FF7E00097C40 /* COYO Vaccine v2 */ = {
+		98E8BF7A2667FF7E00097C40 /* Hamburg Vaccine */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 98E8BF8B2667FF7F00097C40 /* Build configuration list for PBXNativeTarget "COYO Vaccine v2" */;
+			buildConfigurationList = 98E8BF8B2667FF7F00097C40 /* Build configuration list for PBXNativeTarget "Hamburg Vaccine" */;
 			buildPhases = (
 				98E8BF772667FF7E00097C40 /* Sources */,
 				98E8BF782667FF7E00097C40 /* Frameworks */,
@@ -78,9 +78,9 @@
 			);
 			dependencies = (
 			);
-			name = "COYO Vaccine v2";
+			name = "Hamburg Vaccine";
 			productName = "COYO Vaccine v2";
-			productReference = 98E8BF7B2667FF7E00097C40 /* COYO Vaccine v2.app */;
+			productReference = 98E8BF7B2667FF7E00097C40 /* Hamburg Vaccine.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -97,7 +97,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 98E8BF762667FF7E00097C40 /* Build configuration list for PBXProject "COYO Vaccine v2" */;
+			buildConfigurationList = 98E8BF762667FF7E00097C40 /* Build configuration list for PBXProject "Hamburg Vaccine" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -110,7 +110,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				98E8BF7A2667FF7E00097C40 /* COYO Vaccine v2 */,
+				98E8BF7A2667FF7E00097C40 /* Hamburg Vaccine */,
 			);
 		};
 /* End PBXProject section */
@@ -271,19 +271,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "COYO Vaccine v2/COYO_Vaccine_v2.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Hamburg Vaccine/Hamburg_Vaccine.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = Y4Q52G7VRN;
 				ENABLE_HARDENED_RUNTIME = YES;
-				INFOPLIST_FILE = "COYO Vaccine v2/Info.plist";
+				INFOPLIST_FILE = "Hamburg Vaccine/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.1;
-				PRODUCT_BUNDLE_IDENTIFIER = "Turushan.COYO-Vaccine-v2";
+				PRODUCT_BUNDLE_IDENTIFIER = "Turushan.hamburg-vaccine";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -294,19 +294,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "COYO Vaccine v2/COYO_Vaccine_v2.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Hamburg Vaccine/Hamburg_Vaccine.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = Y4Q52G7VRN;
 				ENABLE_HARDENED_RUNTIME = YES;
-				INFOPLIST_FILE = "COYO Vaccine v2/Info.plist";
+				INFOPLIST_FILE = "Hamburg Vaccine/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.1;
-				PRODUCT_BUNDLE_IDENTIFIER = "Turushan.COYO-Vaccine-v2";
+				PRODUCT_BUNDLE_IDENTIFIER = "Turushan.hamburg-vaccine";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -315,7 +315,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		98E8BF762667FF7E00097C40 /* Build configuration list for PBXProject "COYO Vaccine v2" */ = {
+		98E8BF762667FF7E00097C40 /* Build configuration list for PBXProject "Hamburg Vaccine" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				98E8BF892667FF7F00097C40 /* Debug */,
@@ -324,7 +324,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		98E8BF8B2667FF7F00097C40 /* Build configuration list for PBXNativeTarget "COYO Vaccine v2" */ = {
+		98E8BF8B2667FF7F00097C40 /* Build configuration list for PBXNativeTarget "Hamburg Vaccine" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				98E8BF8C2667FF7F00097C40 /* Debug */,
